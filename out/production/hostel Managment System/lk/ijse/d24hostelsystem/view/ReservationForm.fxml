@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="611.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24hostelsystem.controller.ReservationFormController">
     <children>
-        <JFXButton layoutX="33.0" layoutY="37.0" onAction="#makeReservationVisibleOnAction" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #C0C0C0;" text="Make a Reservation" />
+        <JFXButton layoutX="33.0" layoutY="37.0" onAction="#makeReservationVisibleOnAction" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #1c6418;" text="Make a Reservation" />
         <JFXButton layoutX="188.0" layoutY="37.0" onAction="#updateReservationVisibleOnAction" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #C0C0C0;" text="Update a Reservation" />
         <JFXButton layoutX="341.0" layoutY="37.0" onAction="#deleteReservationVisibleOnAction" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #C0C0C0;" text="Delete a Reservation" />
         <JFXTextField fx:id="txtReservationId" focusColor="#bc0000" labelFloat="true" layoutX="52.0" layoutY="91.0" prefHeight="29.0" prefWidth="368.0" promptText="Reservation ID" unFocusColor="WHITE">

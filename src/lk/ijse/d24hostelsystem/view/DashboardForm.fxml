@@ -10,16 +10,11 @@
 
 <AnchorPane prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24hostelsystem.controller.DashboardFormController">
     <children>
-        <ImageView fitHeight="834.0" fitWidth="1283.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@assets/MacBook%20Air%20-%203.png" />
-            </image>
-        </ImageView>
-        <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="10.0" layoutX="590.0" layoutY="40.0" onAction="#reservationOnAction" prefHeight="64.0" prefWidth="174.0" ripplerFill="#000000be" style="-fx-background-color: D9D9D9; -fx-background-radius: 10;" text="Reservation" textFill="#e80d0d">
+        <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="10.0" layoutX="590.0" layoutY="40.0" onAction="#reservationOnAction" prefHeight="64.0" prefWidth="174.0" ripplerFill="#000000be" style="-fx-background-color: D9D9D9; -fx-background-radius: 10;" text="Reservation" textFill="#1b0101">
             <graphic>
-                <ImageView fitHeight="43.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="43.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@assets/Reserve.png" />
+                        <Image url="@assets/img1.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -29,11 +24,11 @@
             <cursor>
                 <Cursor fx:constant="HAND" />
             </cursor></JFXButton>
-        <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="18.0" layoutX="813.0" layoutY="40.0" onAction="#studentsOnAction" prefHeight="64.0" prefWidth="174.0" ripplerFill="#000000be" style="-fx-background-color: D9D9D9; -fx-background-radius: 10;" text="Students" textFill="#e80d0d">
+        <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="18.0" layoutX="813.0" layoutY="40.0" onAction="#studentsOnAction" prefHeight="64.0" prefWidth="174.0" ripplerFill="#000000be" style="-fx-background-color: D9D9D9; -fx-background-radius: 10;" text="Students" textFill="#140101">
             <graphic>
-                <ImageView fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="33.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@assets/Schoolboy%20at%20a%20Desk.png" />
+                        <Image url="@assets/username.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -44,11 +39,11 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </JFXButton>
-        <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="25.0" layoutX="1037.0" layoutY="40.0" onAction="#roomsOnAction" prefHeight="64.0" prefWidth="174.0" ripplerFill="#000000be" style="-fx-background-color: D9D9D9; -fx-background-radius: 10;" text="Rooms" textFill="#e80d0d">
+        <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="25.0" layoutX="1037.0" layoutY="40.0" onAction="#roomsOnAction" prefHeight="64.0" prefWidth="174.0" ripplerFill="#000000be" style="-fx-background-color: D9D9D9; -fx-background-radius: 10;" text="Rooms" textFill="#252424">
             <graphic>
-                <ImageView fitHeight="43.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="30.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@assets/Watch%20TV.png" />
+                        <Image url="@assets/img3.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -59,7 +54,7 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </JFXButton>
-        <JFXButton buttonType="RAISED" layoutX="1107.0" layoutY="768.0" onAction="#signOutOnAction" prefHeight="40.0" prefWidth="113.0" style="-fx-background-color: red; -fx-background-radius: 10; -fx-border-color: white; -fx-border-radius: 10;" text="Sign Out" textFill="WHITE">
+        <JFXButton buttonType="RAISED" layoutX="1107.0" layoutY="768.0" onAction="#signOutOnAction" prefHeight="40.0" prefWidth="113.0" style="-fx-background-color: green; -fx-background-radius: 10; -fx-border-color: white; -fx-border-radius: 10;" text="Sign Out" textFill="WHITE">
             <graphic>
                 <ImageView fitHeight="28.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -88,39 +83,39 @@
                 <Font size="18.0" />
             </font>
         </Label>
-        <AnchorPane fx:id="loadPane" layoutX="40.0" layoutY="138.0" prefHeight="611.0" prefWidth="1206.0" style="-fx-background-radius: 20; -fx-border-color: red; -fx-border-radius: 20;">
+        <AnchorPane fx:id="loadPane" layoutX="40.0" layoutY="138.0" prefHeight="611.0" prefWidth="1206.0" style="-fx-background-radius: 20; -fx-border-color: green; -fx-border-radius: 20;">
             <children>
                 <ImageView fitHeight="581.0" fitWidth="1047.0" layoutX="69.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@assets/Group%201.png" />
+                        <Image url="@assets/img3.png" />
                     </image>
                 </ImageView>
-                <Label fx:id="roomsCount" layoutX="128.0" layoutY="59.0" prefHeight="101.0" prefWidth="103.0" text="00" textFill="WHITE">
+                <Label fx:id="roomsCount" layoutX="826.0" layoutY="66.0" prefHeight="101.0" prefWidth="103.0" text="00" textFill="#1c6418">
                     <font>
                         <Font name="System Bold" size="80.0" />
                     </font>
                 </Label>
-                <Label layoutX="292.0" layoutY="110.0" text="Rooms" textFill="WHITE">
+                <Label layoutX="968.0" layoutY="113.0" text="Rooms" textFill="#1c6418">
                     <font>
                         <Font size="32.0" />
                     </font>
                 </Label>
-                <Label fx:id="studentCount" layoutX="136.0" layoutY="255.0" prefHeight="101.0" prefWidth="103.0" text="00" textFill="WHITE">
+                <Label fx:id="studentCount" layoutX="836.0" layoutY="187.0" prefHeight="101.0" prefWidth="103.0" text="00" textFill="#1c6418">
                     <font>
                         <Font name="System Bold" size="80.0" />
                     </font>
                 </Label>
-                <Label layoutX="300.0" layoutY="306.0" text="Students" textFill="WHITE">
+                <Label layoutX="968.0" layoutY="231.0" text="Students" textFill="#1c6418">
                     <font>
                         <Font size="32.0" />
                     </font>
                 </Label>
-                <Label fx:id="ReservationCount" layoutX="136.0" layoutY="457.0" prefHeight="101.0" prefWidth="103.0" text="00" textFill="WHITE">
+                <Label fx:id="ReservationCount" layoutX="836.0" layoutY="331.0" prefHeight="101.0" prefWidth="103.0" text="00" textFill="#1c6418">
                     <font>
                         <Font name="System Bold" size="80.0" />
                     </font>
                 </Label>
-                <Label layoutX="300.0" layoutY="508.0" text="Reservations" textFill="WHITE">
+                <Label layoutX="968.0" layoutY="376.0" text="Reservations" textFill="#1c6418">
                     <font>
                         <Font size="32.0" />
                     </font>
