@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="pane" prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24hostelsystem.controller.LoginFormController">
+<AnchorPane fx:id="pane" prefHeight="832.0" prefWidth="1280.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24hostelsystem.controller.LoginFormController">
     <children>
         <ImageView fitHeight="832.0" fitWidth="1280.0" nodeOrientation="INHERIT" pickOnBounds="true">
             <image>
@@ -54,5 +54,27 @@
                 <Image url="@assets/Hide.png" />
             </image>
         </ImageView>
+      <AnchorPane layoutX="14.0" layoutY="2.0" prefHeight="837.0" prefWidth="725.0" style="-fx-background-color: #fdfblblackckfd;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane layoutX="665.0" prefHeight="108.0" prefWidth="143.0" style="-fx-background-color: #242224;" />
+      <AnchorPane prefHeight="837.0" prefWidth="725.0" style="-fx-background-color: #242224;">
+         <children>
+            <ImageView fitHeight="445.0" fitWidth="663.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/hostelHomepage.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="452.0" fitWidth="663.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/roompic.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="108.0" fitWidth="274.0" layoutX="816.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/download%20(3).png" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>

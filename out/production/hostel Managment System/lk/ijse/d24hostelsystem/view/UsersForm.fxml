@@ -5,12 +5,23 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="611.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24hostelsystem.controller.UsersFormController">
     <children>
+      <ImageView fitHeight="548.0" fitWidth="825.0" layoutX="382.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/roompic.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="605.0" fitWidth="825.0" layoutX="382.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/roompic.jpg" />
+         </image>
+      </ImageView>
         <JFXTextField fx:id="txtName" focusColor="#cd0909" layoutX="115.0" layoutY="171.0" prefHeight="27.0" prefWidth="235.0" promptText="Name" unFocusColor="WHITE">
             <font>
                 <Font size="15.0" />
@@ -44,8 +55,8 @@
                 <TableColumn fx:id="colEmail" prefWidth="192.0" text="email" />
             </columns>
         </TableView>
-        <Button layoutX="115.0" layoutY="441.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="27.0" prefWidth="120.0" text="Save" />
-        <Button layoutX="243.0" layoutY="441.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="27.0" prefWidth="120.0" text="Update" />
+        <Button layoutX="115.0" layoutY="441.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: blue;" text="Save" textFill="#f2ecec" />
+        <Button layoutX="243.0" layoutY="441.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: cyan;" text="Update" />
         <JFXTextField fx:id="txtUserID" focusColor="#cd0909" layoutX="115.0" layoutY="113.0" prefHeight="27.0" prefWidth="235.0" promptText="User ID" unFocusColor="WHITE">
             <font>
                 <Font size="15.0" />

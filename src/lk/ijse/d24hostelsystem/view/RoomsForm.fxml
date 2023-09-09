@@ -5,12 +5,23 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="611.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24hostelsystem.controller.RoomsFormController">
+<AnchorPane prefHeight="611.0" prefWidth="1238.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24hostelsystem.controller.RoomsFormController">
     <children>
+      <ImageView fitHeight="532.0" fitWidth="813.0" layoutX="437.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/roompic.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="532.0" fitWidth="869.0" layoutX="437.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/roompic.jpg" />
+         </image>
+      </ImageView>
         <JFXTextField fx:id="txtRoomId" focusColor="#d71111" labelFloat="true" layoutX="243.0" layoutY="198.0" prefHeight="27.0" prefWidth="195.0" promptText="Room ID" unFocusColor="WHITE">
             <font>
                 <Font size="15.0" />
@@ -34,10 +45,10 @@
         <JFXButton layoutX="14.0" layoutY="248.0" onAction="#addRoomVisibleOnAction" prefHeight="27.0" prefWidth="172.0" style="-fx-background-color: #C0C0C0;" text="Add a Room" />
         <JFXButton layoutX="14.0" layoutY="289.0" onAction="#updateRoomVisibleOnAction" prefHeight="27.0" prefWidth="172.0" style="-fx-background-color: #C0C0C0;" text="Update  Room Details" />
         <JFXButton layoutX="14.0" layoutY="338.0" onAction="#deleteRoomVisibleOnAction" prefHeight="27.0" prefWidth="172.0" style="-fx-background-color: #C0C0C0;" text="Delete a Room" />
-        <JFXButton layoutX="243.0" layoutY="444.0" onAction="#saveRoomOnAction" prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: white;" text="Save" />
-        <JFXButton layoutX="341.0" layoutY="444.0" onAction="#updateRoomOnAction" prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: white;" text="Update" />
-        <JFXButton layoutX="243.0" layoutY="488.0" onAction="#deleteRoomOnAction" prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: white;" text="Delete" />
-        <JFXButton layoutX="341.0" layoutY="488.0" onAction="#clearOnAction" prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: white;" text="Clear" />
+        <JFXButton layoutX="243.0" layoutY="444.0" onAction="#saveRoomOnAction" prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: blue;" text="Save" textFill="#fcf8f8" />
+        <JFXButton layoutX="341.0" layoutY="444.0" onAction="#updateRoomOnAction" prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: cyan;" text="Update" textFill="#2c0202" />
+        <JFXButton layoutX="243.0" layoutY="488.0" onAction="#deleteRoomOnAction" prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: red;" text="Delete" textFill="#f2efef" />
+        <JFXButton layoutX="341.0" layoutY="488.0" onAction="#clearOnAction" prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: black;" text="Clear" textFill="#f8f6f6" />
         <TableView fx:id="tblRooms" layoutX="528.0" layoutY="100.0" prefHeight="421.0" prefWidth="632.0">
             <columns>
                 <TableColumn fx:id="colTypeID" prefWidth="129.0" text="Type ID" />

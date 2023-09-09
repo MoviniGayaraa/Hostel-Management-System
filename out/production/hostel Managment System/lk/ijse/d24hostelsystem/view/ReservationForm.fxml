@@ -7,12 +7,24 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="611.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24hostelsystem.controller.ReservationFormController">
+<AnchorPane prefHeight="596.0" prefWidth="1190.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24hostelsystem.controller.ReservationFormController">
     <children>
-        <JFXButton layoutX="33.0" layoutY="37.0" onAction="#makeReservationVisibleOnAction" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #1c6418;" text="Make a Reservation" />
+      <ImageView fitHeight="475.0" fitWidth="644.0" layoutX="561.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/roompic.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="428.0" fitWidth="711.0" layoutX="560.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/roompic.jpg" />
+         </image>
+      </ImageView>
+        <JFXButton layoutX="33.0" layoutY="37.0" onAction="#makeReservationVisibleOnAction" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #C0C0C0;" text="Make a Reservation" />
         <JFXButton layoutX="188.0" layoutY="37.0" onAction="#updateReservationVisibleOnAction" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #C0C0C0;" text="Update a Reservation" />
         <JFXButton layoutX="341.0" layoutY="37.0" onAction="#deleteReservationVisibleOnAction" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #C0C0C0;" text="Delete a Reservation" />
         <JFXTextField fx:id="txtReservationId" focusColor="#bc0000" labelFloat="true" layoutX="52.0" layoutY="91.0" prefHeight="29.0" prefWidth="368.0" promptText="Reservation ID" unFocusColor="WHITE">
@@ -24,10 +36,10 @@
         <JFXComboBox fx:id="cmbRoomID" focusColor="#c61e0f" labelFloat="true" layoutX="52.0" layoutY="199.0" onAction="#cmbRoomOnAction" prefHeight="27.0" prefWidth="187.0" promptText="Room ID" unFocusColor="WHITE" />
         <JFXTextField fx:id="txtStudentName" focusColor="#a10606" labelFloat="true" layoutX="292.0" layoutY="149.0" prefHeight="27.0" prefWidth="174.0" promptText="Student Name" unFocusColor="WHITE" />
         <JFXTextField fx:id="txtRoomQty" focusColor="#9a0904" labelFloat="true" layoutX="292.0" layoutY="192.0" prefHeight="27.0" prefWidth="174.0" promptText="Room Qty" unFocusColor="WHITE" />
-        <JFXButton fx:id="dltReserveOnAction" layoutX="388.0" layoutY="246.0" onAction="#dltOnAction" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: white;" text="Delete" />
-        <JFXButton fx:id="updateReserveOnAction" layoutX="292.0" layoutY="246.0" onAction="#updateOnAction" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: white;" text="Update" />
-        <JFXButton fx:id="reserveOnAction" layoutX="193.0" layoutY="246.0" onAction="#reserveOnAction" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: white;" text="Reserve" />
-        <TableView fx:id="tblNotPayed" layoutX="16.0" layoutY="344.0" prefHeight="200.0" prefWidth="553.0">
+        <JFXButton fx:id="dltReserveOnAction" layoutX="388.0" layoutY="246.0" onAction="#dltOnAction" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: red;" text="Delete" textFill="#f2e9e9" />
+        <JFXButton fx:id="updateReserveOnAction" layoutX="292.0" layoutY="246.0" onAction="#updateOnAction" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: cyan;" text="Update" />
+        <JFXButton fx:id="reserveOnAction" layoutX="193.0" layoutY="246.0" onAction="#reserveOnAction" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: blue;" text="Reserve" textFill="#fffbfb" />
+        <TableView fx:id="tblNotPayed" layoutX="16.0" layoutY="344.0" prefHeight="200.0" prefWidth="544.0">
             <columns>
                 <TableColumn fx:id="colReserveID" prefWidth="102.0" text="Reservation ID" />
                 <TableColumn fx:id="colRoomID" text="Room ID" />
@@ -46,7 +58,7 @@
                 <TableColumn fx:id="colKeyMoney" prefWidth="125.0" text="Key Money" />
             </columns>
         </TableView>
-        <JFXCheckBox fx:id="cbxStatus" checkedColor="#b20303" layoutX="52.0" layoutY="251.0" text="Key Money" unCheckedColor="WHITE" />
+        <JFXCheckBox fx:id="cbxStatus" checkedColor="#b20303" layoutX="52.0" layoutY="251.0" style="-fx-background-color: yellow;" text="Key Money" unCheckedColor="WHITE" />
         <Label layoutX="24.0" layoutY="315.0" text="Key Money Un paid Students">
             <font>
                 <Font size="15.0" />

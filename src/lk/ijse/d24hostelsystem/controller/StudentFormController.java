@@ -15,6 +15,7 @@ import javafx.scene.layout.AnchorPane;
 import lk.ijse.d24hostelsystem.bo.BOFactory;
 import lk.ijse.d24hostelsystem.bo.custom.StudentBO;
 import lk.ijse.d24hostelsystem.dto.StudentDTO;
+import lk.ijse.d24hostelsystem.dto.UsersDTO;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -150,6 +151,36 @@ public class StudentFormController {
         }
 
     }
+    /*
+    StudentDTO studentDto=new StudentDTO();
+        studentDto.setStudentId(txtStudentId.getText());
+        studentDto.setStudentName(txtStudentName.getText());
+        studentDto.setHomeTown(txtStudentHomeTown.getText());
+//
+    UsersDTO usersDTO = new UsersDTO();
+        usersDTO.setId(txtUserID.getText());
+        usersDTO.setName(txtName.getText());
+        usersDTO.setUserName(txtUserName.getText());
+        usersDTO.setPassword(txtPassword.getText());
+        usersDTO.setEmail(txtEmail.getText());
+
+    boolean isSaved = usersBO.saveUsers(
+            new UsersDTO(
+                    txtUserID.getText(),
+                    txtName.getText(),
+                    txtUserName.getText(),
+                    txtPassword.getText(),
+                    txtEmail.getText()
+            )
+    );
+        if (isSaved){
+        new Alert(Alert.AlertType.CONFIRMATION,"User added").show();
+    }else {
+        new Alert(Alert.AlertType.ERROR,"Error").show();
+    }
+}
+
+     */
 
     public void searchStudentOnAction(ActionEvent actionEvent) {
         txtStudentName.setDisable(false);

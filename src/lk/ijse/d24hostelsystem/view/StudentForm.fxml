@@ -7,13 +7,25 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="studentPane" prefHeight="611.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24hostelsystem.controller.StudentFormController">
     <children>
-        <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#goBackOnAction" prefHeight="29.0" prefWidth="73.0" ripplerFill="#140101" style="-fx-background-color: gray;" text="Go Back" textFill="#f2eeee" />
+      <ImageView fitHeight="519.0" fitWidth="881.0" layoutX="430.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/roompic.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="519.0" fitWidth="793.0" layoutX="430.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/roompic.jpg" />
+         </image>
+      </ImageView>
+        <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#goBackOnAction" prefHeight="29.0" prefWidth="73.0" ripplerFill="#140101" style="-fx-background-color: gray;" text=" Back" textFill="#f2eeee" />
         <JFXTextField fx:id="txtStudentName" focusColor="#c90707" labelFloat="true" layoutX="190.0" layoutY="127.0" prefHeight="29.0" prefWidth="230.0" promptText="Full Name" unFocusColor="WHITE">
             <font>
                 <Font size="15.0" />
@@ -34,7 +46,7 @@
                 <Font size="15.0" />
             </font>
         </JFXTextField>
-        <JFXDatePicker fx:id="txtStudentDob" defaultColor="#c90707" layoutX="190.0" layoutY="324.0" prefHeight="27.0" prefWidth="230.0" promptText="Date Of Birth" />
+        <JFXDatePicker fx:id="txtStudentDob" defaultColor="#f5eeee" layoutX="190.0" layoutY="324.0" prefHeight="27.0" prefWidth="230.0" />
         <JFXComboBox fx:id="cmbStudentGender" focusColor="#c90707" labelFloat="true" layoutX="190.0" layoutY="387.0" prefHeight="27.0" prefWidth="230.0" promptText="Gender" unFocusColor="WHITE" />
         <JFXTextField fx:id="txtStudentPhoneNumber" focusColor="#c90707" labelFloat="true" layoutX="190.0" layoutY="457.0" prefHeight="29.0" prefWidth="230.0" promptText="Phone Number" unFocusColor="WHITE">
             <font>
