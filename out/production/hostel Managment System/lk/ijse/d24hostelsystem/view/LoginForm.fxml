@@ -73,7 +73,7 @@
       </AnchorPane>
       <ImageView fitHeight="108.0" fitWidth="274.0" layoutX="816.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@assets/download%20(3).png" />
+            <Image url="@assets/download (3).png" />
          </image>
       </ImageView>
     </children>

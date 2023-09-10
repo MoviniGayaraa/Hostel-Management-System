@@ -95,9 +95,9 @@
                         <Font name="System Bold" size="36.0" />
                     </font>
                 </Label>
-                <Label layoutX="36.0" layoutY="419.0" text="Rooms" textFill="#170000">
+                <Label layoutX="36.0" layoutY="442.0" text="Rooms" textFill="#170000">
                     <font>
-                        <Font size="32.0" />
+                        <Font size="24.0" />
                     </font>
                 </Label>
                 <Label fx:id="studentCount" layoutX="43.0" layoutY="39.0" prefHeight="101.0" prefWidth="103.0" text="00" textFill="#1e0202">
@@ -105,9 +105,9 @@
                         <Font name="System Bold" size="36.0" />
                     </font>
                 </Label>
-                <Label layoutX="32.0" layoutY="339.0" text="Students" textFill="#220101">
+                <Label layoutX="36.0" layoutY="370.0" text="Students" textFill="#220101">
                     <font>
-                        <Font size="32.0" />
+                        <Font size="24.0" />
                     </font>
                 </Label>
                 <Label fx:id="ReservationCount" layoutX="162.0" layoutY="39.0" prefHeight="101.0" prefWidth="103.0" text="00" textFill="#171717">
@@ -117,17 +117,17 @@
                 </Label>
                 <Label layoutX="36.0" layoutY="515.0" text="Reservations" textFill="#3c0404">
                     <font>
-                        <Font size="32.0" />
+                        <Font size="24.0" />
                     </font>
                 </Label>
             <ImageView fitHeight="437.0" fitWidth="621.0" layoutX="571.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@assets/Screenshot%20(589).png" />
+                  <Image url="@assets/Screenshot (589).png" />
                </image>
             </ImageView>
             <ImageView fitHeight="327.0" fitWidth="251.0" layoutX="571.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@assets/Screenshot%20(590).png" />
+                  <Image url="@assets/Screenshot (590).png" />
                </image>
             </ImageView>
             <ImageView fitHeight="156.0" fitWidth="282.0" layoutX="805.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
@@ -137,12 +137,12 @@
             </ImageView>
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1004.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@assets/Screenshot%20(591).png" />
+                  <Image url="@assets/Screenshot (591).png" />
                </image>
             </ImageView>
             <ImageView fitHeight="156.0" fitWidth="492.0" layoutX="28.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@assets/download%20(3).png" />
+                  <Image url="@assets/download (3).png" />
                </image>
             </ImageView>
             </children></AnchorPane>

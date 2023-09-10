@@ -25,7 +25,7 @@
             <Image url="@assets/roompic.jpg" />
          </image>
       </ImageView>
-        <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#goBackOnAction" prefHeight="29.0" prefWidth="73.0" ripplerFill="#140101" style="-fx-background-color: gray;" text=" Back" textFill="#f2eeee" />
+        <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#goBackOnAction" prefHeight="29.0" prefWidth="73.0" ripplerFill="#140101" style="-fx-background-color: whiteray;" text=" Back" textFill="#f2eeee" />
         <JFXTextField fx:id="txtStudentName" focusColor="#c90707" labelFloat="true" layoutX="190.0" layoutY="127.0" prefHeight="29.0" prefWidth="230.0" promptText="Full Name" unFocusColor="WHITE">
             <font>
                 <Font size="15.0" />
